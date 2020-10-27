@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lec 2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+        $(".btn1").click(function(){
+         $("#1").fadeTo("slow",0.5);
+         $("#2").fadeTo(0.4);
+         $("#3").fadeTo("fast",0.2);
+        });
+        $(".btn2").click(function(){
+         $("#1").fadeToggle("slow");
+         $("#2").fadeToggle();
+         $("#3").fadeToggle("fast"
+         	);
+        });
+		});
+	</script>
+</head>
+<body>
+	<button class="btn1">fadeTo</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<button class="btn2">fadeToggle</button><br><br>
+
+<div id="1" style="height: 80px;width: 80px; background-color: red;"></div><br>
+<div id="2" style="height: 80px;width: 80px; background-color: green;"></div><br>
+<div id="3" style="height: 80px;width: 80px; background-color: yellow;"></div><br>
+</body>
+</html>
