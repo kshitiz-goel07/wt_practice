@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".btn").click(function(){
+            $("#1").hide("slow",function(){
+                alert("Your para is now hidden");
+            });
+			});
+		});
+	</script>
+</head>
+<body>
+<button class="btn">Click to hide</button>
+<p id="1">A small para </p>
+</body>
+</html>

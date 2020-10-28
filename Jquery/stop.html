@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+         $(".btn").click(function(){
+          $("#2").stop();
+         });
+         $("#1").click(function(){
+           $("#2").slideToggle(2000);
+         });
+		});
+	</script>
+</head>
+<body>
+<button class="btn">Click To Stop Sliding</button><br><br>
+<div id="1" style="background:#98bf21;height:50px;width:500px;">Click To Slide toggle</div>
+<div id="2" style="background:#98bf21;height:50px;width:500px;">HELLO WORLD</div>
+</body>
+</html>
