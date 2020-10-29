@@ -1,0 +1,56 @@
+import java.util.Scanner;
+// Other imports go here
+// Do NOT change the class name
+class Main
+{
+    public static void selectionsort(int ar[])
+    {
+        /*
+        int small,i,j,swap;
+        for(i=0;i<ar.length-1;i++)
+        {
+            small=ar[i];
+            int flag=0,p=0;
+            for(j=i+1;j<ar.length;j++)
+            {
+                if(small>ar[j])
+                {
+                    flag=1;
+                    small=ar[j];
+                    p=j;
+                }
+            }
+            if(flag==1)
+                {
+                    swap=ar[i];
+                    ar[i]=small;
+                    ar[p]=swap;
+                }
+        }
+    }
+    public static void main(String[] args)
+    {
+        // Write your code here
+        int n,i;
+        Scanner sc=new Scanner(System.in);
+        n=sc.nextInt();
+        int s[]=new int[n];
+        for(i=0;i<n;i++)
+        {
+           s[i]=sc.nextInt();
+        }
+        System.out.println("orignal !!");
+        for(i=0;i<n;i++)
+        {
+            System.out.print(s[i]+" ");
+        }
+        System.out.println();
+        selectionsort(s);
+                System.out.println("Sorted !!");
+        for(i=0;i<n;i++)
+        {
+                        System.out.print(s[i]+" ");
+        }
+
+    }
+    }
