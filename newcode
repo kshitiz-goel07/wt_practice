@@ -1,0 +1,49 @@
+import java.util.Scanner;
+// Other imports go here
+// Do NOT change the class name
+class Main
+{
+    public static void insertionsort(int ar[]){
+        int i,j,key;
+        for(i=1;i<ar.length;i++)
+        {
+            key=ar[i];
+            for(j=i-1;j>=0;j--)
+            {
+                if(ar[j]<key)
+                {
+                    break;
+                }
+                else
+                {
+                    ar[j+1]=ar[j];
+                    ar[j]=key;
+                }
+            }
+        }
+    }
+    public static void main(String[] args)
+    {
+        int n,a;
+        // Write your code here
+        System.out.println("Orignal Array !");
+        Scanner sc=new Scanner(System.in);
+           n=sc.nextInt();
+           int s[]=new int[n];
+           for(a=0;a<n;a++)
+           {
+               s[a]=sc.nextInt();
+           }
+           for(a=0;a<n;a++)
+           {
+               System.out.print(s[a]+" ");
+           }
+                       System.out.println();
+              insertionsort(s);
+           System.out.println("Sorted Array !");
+           for(a=0;a<n;a++)
+           {
+               System.out.print(s[a]+" ");
+           }
+    }
+    }
